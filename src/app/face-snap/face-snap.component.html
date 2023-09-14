@@ -1,6 +1,11 @@
-<h2>{{title}}</h2>
-<p> Mise en ligne le {{createDate}}</p>
-<p> {{description}}</p>
-<p>👌{{snaps}}</p>
+<div class="face-snap-card">
+<h2>{{facesnap.title}}</h2>
+<p> Mise en ligne le {{facesnap.createDate}}</p>
+<img [src]="facesnap.imageUrl" [alt]="facesnap.title">
+<p> {{facesnap.description}}</p>
+<p>
+<button (click)="onAddSnap()"> {{buttonText}}</button>
+👌{{facesnap.snaps}}</p>
+</div>
 
 

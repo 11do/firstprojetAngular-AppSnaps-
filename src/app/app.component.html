@@ -1,1 +1,3 @@
-<app-face-snap [facesnap]="mySnap"></app-face-snap>
+<app-face-snap *ngFor = "let a of mySnaps" [facesnap]="a" ></app-face-snap>
+
+
